@@ -1,3 +1,4 @@
+//function learning
 #include <iostream>
 #include <cmath>
 
