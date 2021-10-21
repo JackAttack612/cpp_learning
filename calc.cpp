@@ -1,19 +1,28 @@
 #include <iostream>
+#include <cmath>
+#include <string>
 
 using namespace std;
 
+string calculator(){
+    string calculation = "Error Code: 001";
+    cout << "Enter Calculation: ";
+    getline(cin, calculation);
+    if (calculation == "help"){
+        return calculation;
+    }
+    else{
+        return calculation;
+    }
+    return calculation;
+}
+
+
+
 int main()
 {
-    double num1, num2;
-    cout << "Enter first number: ";
-    cin >> num1;
 
-    cout << "Enter second number: ";
-    cin >> num2;
-
-    cout << "Result: " << num1 + num2;
-
-
+    calculator();
 
     return 0;
 }
