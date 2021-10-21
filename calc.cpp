@@ -1,28 +1,21 @@
-#include <iostream>
-#include <cmath>
+#include <iostream> 
+#include <cstdlib> 
+#include <string.h>
 #include <string>
 
-using namespace std;
+using namespace std; 
 
-string calculator(){
-    string calculation = "Error Code: 001";
-    cout << "Enter Calculation: ";
-    getline(cin, calculation);
-    if (calculation == "help"){
-        return calculation;
-    }
-    else{
-        return calculation;
-    }
-    return calculation;
-}
+int main() 
+{ 
+    start:
+        double calculation = 0;
+        cout << "Enter Calculation: ";
+        cin >> calculation;
+        string eq = to_string(calculation);
+        cout << eq << endl;
+        cout << "Result: " << calculation << endl;
 
-
-
-int main()
-{
-
-    calculator();
+    goto start;
 
     return 0;
-}
+} 
