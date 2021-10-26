@@ -11,7 +11,8 @@ int main()
         double calculation = 0;
         cout << "Enter Calculation: ";
         cin >> calculation;
-        cout << "Result: " << calculation << endl;
+        string answer = to_string(calculation);
+        cout << answer << endl;
 
     goto start;
 
